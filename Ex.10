@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Porche Wooten</title>
+</head>
+<body>
+<script>
+    var  card1 = prompt('1st Card Please');
+    var  card2 = prompt('2nd Card Please');
+    var  card3 = prompt('3rd Card Please');
+    cards = parseInt(card1)+parseInt(card2)+parseInt(card3);
+    if (card1 + card2 + card3 == 21 )
+    {
+        console.log("BLACKJACK");
+    }
+    else if (card1 + card2 + card3 >= 21){
+        console.log("BUST");
+    }
+     else if (card1 + card2 + card3 <= 21){
+         console.log("The total is" + cards);
+    }
+
+</script>
+</body>
+</html>
